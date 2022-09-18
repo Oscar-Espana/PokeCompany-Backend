@@ -1,14 +1,25 @@
+import { ApolloServer } from "apollo-server-express";
 import express from "express";
+import { typeDefs } from "./typedefs";
+import { resolvers } from "./resolvers";
+
 const app = express();
 app.use(express.json());
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-app.get("/ping", (_req, res) => {
-  console.log("hol");
-  res.send("ping hola mundo");
-});
+async function start() {
+  const apolloServer = new ApolloServer({
+    typeDefs,
+    resolvers,
+  });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port: ${PORT}`);
-});
+  await apolloServer.start();
+  apolloServer.applyMiddleware({ app, path: "/graphql" });
+
+  app.listen(PORT, () => {
+    console.log(`Server running on port: ${PORT}`);
+  });
+}
+
+start();
