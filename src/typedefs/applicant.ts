@@ -18,5 +18,19 @@ export const typeDefs = gql`
 
   type Query {
     applicants: [Applicant]
+    applicant(id: String!): Applicant
+  }
+
+  input ApplicantInput {
+    fullName: String!
+    email: String!
+    phoneNumber: String!
+    favoritePokemonId: Float!
+    description: String!
+    jobId: String!
+  }
+
+  type Mutation {
+    applicantCreate(applicant: ApplicantInput): Applicant
   }
 `;
