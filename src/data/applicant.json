@@ -1,8 +1,11 @@
 [
   {
     "id": "RudYBnOMWVgDA0KVQQxoi",
-    "name": "Oscar Espana",
+    "fullName": "Oscar Espana",
     "email": "espaaoscar@gmail.com",
+    "phoneNumber": "0990121123",
+    "favoritePokemonId": 1,
+    "description": "I would like to be a great pokemon trainer",
     "jobId": "dadasda",
     "status": "pending"
 

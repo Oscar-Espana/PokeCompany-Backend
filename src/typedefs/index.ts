@@ -1,7 +1,4 @@
-import { gql } from "apollo-server-express";
+import { typeDefs as Job } from "./job";
+import { typeDefs as Applicant } from "./applicant";
 
-export const typeDefs = gql`
-  type Query {
-    hello: String
-  }
-`;
+export const typeDefs = [Job, Applicant];

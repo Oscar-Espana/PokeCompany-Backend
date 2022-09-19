@@ -7,8 +7,11 @@ enum ApplicantStatus {
 
 interface Applicant extends Entity {
   id: string;
-  name: string;
+  fullName: string;
   email: string;
+  phoneNumber: string;
+  favoritePokemonId: number;
+  description: string;
   jobId: string;
   status: ApplicantStatus;
 }
