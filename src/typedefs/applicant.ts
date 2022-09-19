@@ -5,14 +5,20 @@ export const typeDefs = gql`
     pending
     hired
   }
+
+  type Pokemon {
+    id: Float
+    name: String
+    img: String
+  }
   type Applicant {
     id: String
     fullName: String
     email: String
     phoneNumber: String
-    favoritePokemonId: Float
+    favoritePokemon: Pokemon
     description: String
-    jobId: String
+    job: Job
     status: ApplicantStatus
   }
 

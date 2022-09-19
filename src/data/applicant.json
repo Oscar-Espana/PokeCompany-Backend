@@ -18,5 +18,15 @@
     "description": "Expert pokemon trainer",
     "jobId": "rrYcWhmRerWVdMkzRGTkA",
     "status": "pending"
+  },
+  {
+    "id": "ZHyilymR_ogT05qjHIB7H",
+    "fullName": "Oscar España",
+    "email": "espaaoscar@gmail.com",
+    "phoneNumber": "0953217463",
+    "favoritePokemonId": 1,
+    "description": "Test",
+    "jobId": "RudYBnOMWVgDA0KVQQxoi",
+    "status": "pending"
   }
 ]
