@@ -38,5 +38,7 @@ export const typeDefs = gql`
 
   type Mutation {
     applicantCreate(applicant: ApplicantInput): Applicant
+    applicantHired(applicantId: String): Boolean
+    applicantReject(applicantId: String): Boolean
   }
 `;

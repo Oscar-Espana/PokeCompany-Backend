@@ -1,28 +1,18 @@
 [
   {
-    "id": "RudYBnOMWVgDA0KVQQxoi",
-    "fullName": "Oscar Espana",
-    "email": "espaaoscar@gmail.com",
-    "phoneNumber": "0990121123",
-    "favoritePokemonId": 1,
-    "description": "I would like to be a great pokemon trainer",
-    "jobId": "dadasda",
-    "status": "pending"
-  },
-  {
     "id": "fcRLDLFdDXr49xgZ2ty-0",
-    "fullName": "Oscar Espana",
-    "email": "espaaoscar@gmail.com",
-    "phoneNumber": "0990121123",
-    "favoritePokemonId": 1,
+    "fullName": "Daniel Valencia",
+    "email": "danivalencia@gmail.com",
+    "phoneNumber": "0935324673",
+    "favoritePokemonId": 12,
     "description": "Expert pokemon trainer",
     "jobId": "rrYcWhmRerWVdMkzRGTkA",
-    "status": "pending"
+    "status": "hired"
   },
   {
     "id": "ZHyilymR_ogT05qjHIB7H",
-    "fullName": "Oscar España",
-    "email": "espaaoscar@gmail.com",
+    "fullName": "Maria Fernandez",
+    "email": "mfernandez@gmail.com",
     "phoneNumber": "0953217463",
     "favoritePokemonId": 1,
     "description": "Test",

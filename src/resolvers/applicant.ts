@@ -25,6 +25,25 @@ export const resolvers = {
   Mutation: {
     applicantCreate: (_root: any, args: { applicant: ApplicantInput }) =>
       Applicant.create({ ...args.applicant, status: ApplicantStatus.pending }),
+    applicantHired: async (_root: any, args: { applicantId: string }) => {
+      const applicantFindById = await Applicant.findById(args.applicantId);
+      if (applicantFindById) {
+        Applicant.update({
+          ...applicantFindById,
+          status: ApplicantStatus.hired,
+        });
+        return true;
+      }
+      return false;
+    },
+    applicantReject: async (_root: any, args: { applicantId: string }) => {
+      const applicantFindById = await Applicant.findById(args.applicantId);
+      if (applicantFindById) {
+        Applicant.delete(args.applicantId);
+        return true;
+      }
+      return false;
+    },
   },
   Applicant: {
     job: (root: { jobId: string }, _args: any) => {
